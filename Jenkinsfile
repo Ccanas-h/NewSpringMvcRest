@@ -35,7 +35,7 @@ pipeline {
                             nexusUrl: "192.168.1.126:8081",
                             groupId: pom.groupId,
                             version: pom.version,
-                            repository: "192.168.1.126:8081/repository/e5-m3-hosted",
+                            repository: "http://192.168.1.126:8081/repository/e5-m3-hosted/content/repositories/e5-m3-hosted/com/journaldev/SpringRestExample/1.0/",
                             credentialsId: "NEXUS-ADMIN",
                             artifacts: [
                                 [artifactId: pom.artifactId,
