@@ -32,11 +32,11 @@ pipeline {
                         nexusArtifactUploader(
                             nexusVersion: "nexus3",
                             protocol: "http",
-                            nexusUrl: "localhost:8081",
+                            nexusUrl: "192.168.1.126:8081",
                             groupId: pom.groupId,
                             version: pom.version,
-                            repository: "EjemploRepo",
-                            credentialsId: "NexusCredentials",
+                            repository: "192.168.1.126:8081/repository/e5-m3-hosted",
+                            credentialsId: "NEXUS-ADMIN",
                             artifacts: [
                                 [artifactId: pom.artifactId,
                                         classifier: '',
