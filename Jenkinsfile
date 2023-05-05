@@ -35,7 +35,7 @@ pipeline {
                             nexusUrl: "192.168.1.126:8081",
                             groupId: pom.groupId,
                             version: pom.version,
-                            repository: "repository/maven-releases/",
+                            repository: "e5-m3-hosted",
                             credentialsId: "NEXUS-ADMIN",
                             artifacts: [
                                 [artifactId: pom.artifactId,
